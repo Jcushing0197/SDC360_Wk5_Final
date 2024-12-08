@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "6118fdf7dda011305494474a"
+  },
+  "add_city": "Seattle",
+  "add_state": "Washington",
+  "add_street": "123 Street",
+  "add_zip": "89234",
+  "census_year": "2005",
+  "num_people": "3",
+  "census_taker": "Sally May"
+}]

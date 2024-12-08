@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4" style="font-size: 2rem; font-weight: bold;">Add New Census</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <form [formGroup]="censusForm" (ngSubmit)="onSubmit()" class="p-4 border rounded bg-light shadow">
+          <div class="form-group">
+            <label for="num_people" class="d-block">Number of People at Address</label>
+            <input id="num_people" class="form-control" type="text" formControlName="num_people" required>
+          </div>
+          <div class="form-group">
+            <label for="add_street" class="d-block">Address</label>
+            <input id="add_street" class="form-control" type="text" formControlName="add_street" required>
+          </div>
+          <div class="form-group">
+            <label for="add_city" class="d-block">City</label>
+            <input id="add_city" class="form-control" type="text" formControlName="add_city" required>
+          </div>
+          <div class="form-group">
+            <label for="add_state" class="d-block">State</label>
+            <input id="add_state" class="form-control" type="text" formControlName="add_state" required>
+          </div>
+          <div class="form-group">
+            <label for="add_zip" class="d-block">Zip Code</label>
+            <input id="add_zip" class="form-control" type="text" formControlName="add_zip" required>
+          </div>
+          <div class="form-group">
+            <label for="census_year" class="d-block">Year</label>
+            <input id="census_year" class="form-control" type="text" formControlName="census_year" required>
+          </div>
+          <div class="form-group">
+            <label for="census_taker" class="d-block">Census Taker</label>
+            <input id="census_taker" class="form-control" type="text" formControlName="census_taker" required>
+          </div>
+          <button class="btn btn-success btn-block mt-3" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
